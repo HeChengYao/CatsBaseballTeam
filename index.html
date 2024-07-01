@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貓貓棒球隊</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/MyAll.css">
+    <style>
+        body {
+            /* background-image: url(/images/棒球貓2.jpg); */
+            background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(images/棒球貓2.jpg);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .word01 {
+            background-color: rgba(255, 255, 0, 0.3);
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(images/棒球貓1.jpg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw900 text-danger" href="#">貓貓棒球隊</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            隊伍介紹
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html"
+                                    style="color: green;">喵喵們</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="product_live.html" style="color: blue;">趣味生活照</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">線上訂票</a>
+                    </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 35%;">
+        <div class="row justify-content-between">
+            <div class="col-md-3 d-none d-md-block">
+                <div class="word01 p-3 mt-5">
+                    <div class="h4 tw900 text-white">
+                        貓捕手，抓住每一顆飛球，就像抓老鼠一樣敏捷！
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+                <div class="word01 p-3 mt-5">
+                    <div class="h4 tw900 text-white">
+                        毛茸茸的貓投手，投出的球彷彿從天而降的飛鼠！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            <div class="col-md-3 d-none d-md-block">
+                <div class="word01 p-3 mt-5">
+                    <div class="h4 tw900 text-white">
+                        貓貓外野手，身手敏捷如同追逐風中的蝴蝶！
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+                <div class="word01 p-3 mt-5">
+                    <div class="h4 tw900 text-white">
+                        喵喵內野手，輕盈奔跑，守備堅若磐石，儼如貓王般的霸氣！
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 d-none d-md-block">
+                <div class="word01 p-3 mt-5">
+                    <div class="h4 tw900 text-white">
+                        貓球隊的教練，耳聽八方，眼觀四顧，就像守護領地的王者一般睿智！
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-5">
+        <div class="h5 text-center text-bg-dark py-3 fw900 bg-warning">@喵喵棒球隊 2024</div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

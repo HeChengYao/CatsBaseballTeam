@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>貓貓棒球隊 ─ 關於我們</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/MyAll.css">
+    <style>
+        body {
+            background-color: rgb(129, 151, 212);
+        }
+
+        .banner {
+            height: 300px;
+            background-image: url(images/用電腦.jpg);
+        }
+
+        .bg-cover {
+            background-position: center center;
+            background-size: cover;
+        }
+
+        .timeline-section {
+            position: relative;
+        }
+
+        .timeline-section::before {
+            position: absolute;
+            content: "";
+            top: 0px;
+            bottom: 0px;
+            width: 5px;
+            background-color: var(--mycolor01);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-section-pointer {
+            position: relative;
+        }
+
+        .timeline-section-pointer::before {
+            position: absolute;
+            content: "";
+            top: -7px;
+            width: 15px;
+            height: 15px;
+            background-color: var(--mycolor03);
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .timeline-section-pointer:hover::before {
+            width: 25px;
+            height: 25px;
+            border: 8px solid var(--greekgetaway02);
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline-section::before {
+                left: -15px;
+                background-color: var(--mycolor01);
+            }
+            .timeline-section-pointer::before {
+                left: -3px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand fw900 text-danger" href="#">貓貓棒球隊</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">關於我們</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            隊伍介紹
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="product.html"
+                                    style="color: green;">喵喵們</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="product_live.html" style="color: blue;">趣味生活照</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">線上訂票</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="banner bg-cover"></div>
+    <div class="container">
+        <div class="timeline-section">
+            <div class="row mt-3 align-items-center timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-danger fw900">關於我們<small class="text-muted fw500">about us</small></div>
+                        <p class="text-warning">你好！我們是「貓貓棒球隊」，是一支充滿熱情和毛茸茸球員的球隊。我們致力於在球場上展現出貓咪的靈活性和精神，讓每場比賽都充滿歡樂和挑戰！</p>
+                        <ul class="list-unstyled">
+                            <li>1.我們的打擊手不但會擊球，還會發出喵喵聲讓對手不知所措。</li>
+                            <li>2.我們的投手技術高超，球就像是從貓咪爪子裡射出來的！！！</li>
+                            <li>3.外野手像捕獲老鼠一樣敏捷，每次跳躍都讓對手們目瞪口呆。</li>
+                            <li>4.貓貓棒球隊的精神口號是：「擊球如擊毛球，飛奔如追老鼠，我們就是那支追求勝利的貓咪軍團！」</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(images/棒球貓1.jpg); height: 330px; border-radius: 10px;
+                    box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
+                </div>
+            </div>
+            <div class="row mt-3 align-items-center timeline-section-pointer flex-row-reverse">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-info fw900">比賽資訊<small class="text-muted fw500">about game</small></div>
+                        <p class="text-warning">在這裡，你將看到一場場充滿熱情與歡笑的比賽，貓咪球員們將展現出他們的靈活性和鬥志，讓你捧腹大笑！</p>
+                        <ul class="list-unstyled">
+                            <li>1."老鼠狂奔日"比賽：今天是貓貓棒球隊的老鼠狂奔日！我們的球員將穿上特製的老鼠裝，奔跑於球場上。</li>
+                            <li>2."貓咪搞怪趣味賽"：讓貓咪們展現他們的搞怪一面！今天的比賽中，球場布滿了各種貓咪喜愛的玩具和狂野場景！</li>
+                            <li>3."貓咪花式球技大賽"：貓貓棒球隊將展示他們的花式球技！從空中飛撲接球到奇妙的投球姿勢。</li>
+                            <li>4."貓咪快閃秀"：讓我們球場上的貓貓們來一場驚喜快閃秀！從突然出現的貓咪舞蹈團到意想不到的表演！</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(images/棒球貓4.jpg); height: 330px; border-radius: 10px;
+                    box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
+                </div>
+            </div>
+            <div class="row mt-3 align-items-center  timeline-section-pointer">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-danger fw900">創隊理念<small class="text-muted fw500">about philosophy</small></div>
+                        <p class="text-warning">我們創立貓貓棒球隊的理念是希望在球場上掀起一陣毛茸茸的風潮！</p>
+                        <ul class="list-unstyled">
+                            <li>誰說只有人類才能玩棒球？貓咪們也有著無限的潛力和搞笑的魅力，相信貓咪可以成為最閃亮的球場明星！我們的口號是：「貓咪們，挺起尾巴，揮舞球棒，讓我們一起在球場上嘶喊『喵～』！」就讓我們一起以貓咪為榮，以歡笑為伴，一同創造出一個充滿趣味和挑戰的棒球世界吧！
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(images/棒球貓10.jpg); height: 330px; border-radius: 10px;
+                    box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
+                </div>
+            </div>
+            <div class="row mt-3 align-items-center timeline-section-pointer flex-row-reverse">
+                <div class="col-md-6 text-center">
+                    <div class="mytext">
+                        <div class="h3 text-info fw900">隊伍特色<small class="text-muted fw500">about characteristic</small></div>
+                        <p class="text-warning">貓貓棒球隊的特色就是我們的球員全都是毛絨絨的貓咪！</p>
+                        <ul class="list-unstyled">
+                            <li>這些可愛的球員們不僅擁有敏捷的身手和敏銳的直覺，還帶來了無限的歡樂和驚喜。在球場上，你會看到我們的打擊手們用尾巴揮動球棒，投手們以優雅的姿態投出球，外野手們像貓咪一樣輕盈地奔跑捕捉每顆球。我們的比賽不僅是一場場競技，更是一場場讓觀眾心情愉悅、笑聲不斷的表演。加入我們，一起享受這個獨一無二的貓咪棒球魅力吧！</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myimg bg-cover" style="background-image: url(images/棒球貓12.jpg); height: 330px; border-radius: 10px;
+                    box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer mt-3">
+        <div class="h5 text-center text-bg-dark py-3 fw900">@喵喵棒球隊 2024</div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
