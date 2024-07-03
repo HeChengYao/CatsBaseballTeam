@@ -7,14 +7,18 @@
     <title>貓貓棒球隊 ─ 關於我們</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/MyAll.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     <style>
         body {
             background-color: rgb(129, 151, 212);
         }
 
         .banner {
-            height: 300px;
+            height: 100vh;
             background-image: url(images/用電腦.jpg);
+            background-attachment: fixed;
+            background-position: center center;
+            background-size: cover;
         }
 
         .bg-cover {
@@ -51,6 +55,7 @@
             border-radius: 50%;
             left: 50%;
             transform: translateX(-50%);
+            transition: all 1.3s ease;
         }
 
         .timeline-section-pointer:hover::before {
@@ -59,11 +64,36 @@
             border: 8px solid var(--greekgetaway02);
         }
 
+        .myimg {
+            transition: all 1.3s ease;
+        }
+
+        .myimg:hover {
+            transform: scale(1.05);
+        }
+
+        #back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+            z-index: 9999;
+        }
+
+        .navbar {
+            transition: all 1.3s ease;
+        }
+
+        .navbar-scrolled {
+            background-color: rgba(255, 193, 7, 0.9) !important;
+        }
+
         @media screen and (max-width: 768px) {
             .timeline-section::before {
                 left: -15px;
                 background-color: var(--mycolor01);
             }
+
             .timeline-section-pointer::before {
                 left: -3px;
             }
@@ -72,7 +102,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-warning navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-warning navbar-dark fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand fw900 text-danger" href="#">貓貓棒球隊</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -94,8 +124,7 @@
                             隊伍介紹
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="product.html"
-                                    style="color: green;">喵喵們</a></li>
+                            <li><a class="dropdown-item" href="product.html" style="color: green;">喵喵們</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -109,10 +138,15 @@
             </div>
         </div>
     </nav>
-    <div class="banner bg-cover"></div>
+
+    <div class="banner bg-cover d-flex align-items-center justify-content-center">
+        <h1 class="text-white display-1 fw-bold" data-aos="fade-up">關於我們</h1>
+    </div>
+
     <div class="container">
         <div class="timeline-section">
-            <div class="row mt-3 align-items-center timeline-section-pointer">
+            <!-- 每個 row 添加 data-aos 屬性 -->
+            <div class="row mt-3 align-items-center timeline-section-pointer" data-aos="fade-right">
                 <div class="col-md-6 text-center">
                     <div class="mytext">
                         <div class="h3 text-danger fw900">關於我們<small class="text-muted fw500">about us</small></div>
@@ -130,7 +164,7 @@
                     box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
                 </div>
             </div>
-            <div class="row mt-3 align-items-center timeline-section-pointer flex-row-reverse">
+            <div class="row mt-3 align-items-center timeline-section-pointer flex-row-reverse" data-aos="fade-left">
                 <div class="col-md-6 text-center">
                     <div class="mytext">
                         <div class="h3 text-info fw900">比賽資訊<small class="text-muted fw500">about game</small></div>
@@ -148,10 +182,11 @@
                     box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
                 </div>
             </div>
-            <div class="row mt-3 align-items-center  timeline-section-pointer">
+            <div class="row mt-3 align-items-center  timeline-section-pointer" data-aos="fade-right">
                 <div class="col-md-6 text-center">
                     <div class="mytext">
-                        <div class="h3 text-danger fw900">創隊理念<small class="text-muted fw500">about philosophy</small></div>
+                        <div class="h3 text-danger fw900">創隊理念<small class="text-muted fw500">about philosophy</small>
+                        </div>
                         <p class="text-warning">我們創立貓貓棒球隊的理念是希望在球場上掀起一陣毛茸茸的風潮！</p>
                         <ul class="list-unstyled">
                             <li>誰說只有人類才能玩棒球？貓咪們也有著無限的潛力和搞笑的魅力，相信貓咪可以成為最閃亮的球場明星！我們的口號是：「貓咪們，挺起尾巴，揮舞球棒，讓我們一起在球場上嘶喊『喵～』！」就讓我們一起以貓咪為榮，以歡笑為伴，一同創造出一個充滿趣味和挑戰的棒球世界吧！
@@ -164,13 +199,15 @@
                     box-shadow: 2px 2px 10px 5px #f1f3ef;"></div>
                 </div>
             </div>
-            <div class="row mt-3 align-items-center timeline-section-pointer flex-row-reverse">
+            <div class="row mt-3 align-items-center timeline-section-pointer flex-row-reverse" data-aos="fade-left">
                 <div class="col-md-6 text-center">
                     <div class="mytext">
-                        <div class="h3 text-info fw900">隊伍特色<small class="text-muted fw500">about characteristic</small></div>
+                        <div class="h3 text-info fw900">隊伍特色<small class="text-muted fw500">about characteristic</small>
+                        </div>
                         <p class="text-warning">貓貓棒球隊的特色就是我們的球員全都是毛絨絨的貓咪！</p>
                         <ul class="list-unstyled">
-                            <li>這些可愛的球員們不僅擁有敏捷的身手和敏銳的直覺，還帶來了無限的歡樂和驚喜。在球場上，你會看到我們的打擊手們用尾巴揮動球棒，投手們以優雅的姿態投出球，外野手們像貓咪一樣輕盈地奔跑捕捉每顆球。我們的比賽不僅是一場場競技，更是一場場讓觀眾心情愉悅、笑聲不斷的表演。加入我們，一起享受這個獨一無二的貓咪棒球魅力吧！</li>
+                            <li>這些可愛的球員們不僅擁有敏捷的身手和敏銳的直覺，還帶來了無限的歡樂和驚喜。在球場上，你會看到我們的打擊手們用尾巴揮動球棒，投手們以優雅的姿態投出球，外野手們像貓咪一樣輕盈地奔跑捕捉每顆球。我們的比賽不僅是一場場競技，更是一場場讓觀眾心情愉悅、笑聲不斷的表演。加入我們，一起享受這個獨一無二的貓咪棒球魅力吧！
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -186,7 +223,46 @@
         <div class="h5 text-center text-bg-dark py-3 fw900">@喵喵棒球隊 2024</div>
     </div>
 
+    <button id="back-to-top" class="btn btn-primary" title="回到頂部">↑</button>
+
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // 平滑滾動
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 返回頂部按鈕
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("back-to-top").style.display = "block";
+            } else {
+                document.getElementById("back-to-top").style.display = "none";
+            }
+
+            // 導航欄滾動效果
+            if (window.scrollY > 50) {
+                document.querySelector('.navbar').classList.add('navbar-scrolled');
+            } else {
+                document.querySelector('.navbar').classList.remove('navbar-scrolled');
+            }
+        };
+
+        document.getElementById("back-to-top").onclick = function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 
 </html>
