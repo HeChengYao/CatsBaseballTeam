@@ -20,8 +20,8 @@
         }
 
         .banner {
-            height: 300px;
-            background-image: url(images/洗澡1\ -\ 橫.jpg);
+            height: 800px;
+            background-image: url(images/索爾貓\ -\ 橫.jpg);
             background-attachment: fixed;
             background-position: center center;
             background-size: cover;
@@ -39,7 +39,7 @@
         }
 
         .detail_img:hover {
-            transform: scale(1.05);
+            transform: scale(1.1);
         }
 
         .btn-success {
@@ -88,7 +88,7 @@
         .swiper-slide {
             width: 120px !important;
             /* 設置固定寬度 */
-            margin-right: 20px !important;
+            margin-right: 10px !important;
             /* 設置右側間距 */
         }
     </style>
@@ -318,6 +318,8 @@
             pagination: {
                 el: '.swiper-pagination',
                 clickable: true,
+                dynamicBullets: true,  // 動態顯示圓點
+                dynamicMainBullets: 1  // 最多顯示的圓點數量
             },
             navigation: {
                 nextEl: '.swiper-button-next',
